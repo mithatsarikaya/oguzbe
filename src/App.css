@@ -1,38 +1,94 @@
-.App {
+* {
+  margin:0;
+  padding:0;
+}
+
+/* .section{
+  position: relative;
+} */
+
+.navbar{
+  background-color: #3e454f;
+ display: flex; 
+ align-items: center;
+ gap:20px;
+ padding: 10px;
+ color:white;
+ 
+}
+
+.navbar > p {
+  font-weight: 300;
+}
+
+.footer{
+  background-color: #3e454f;
   text-align: center;
+  color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  bottom: 0; 
+  left: 0; 
+  width: 100vw; 
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profanitiesListDiv{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  gap:20px
+}
+
+.profanitiesListDiv--button{
+  /* width: 100px; */
+  background-color: #236795;
   color: white;
+  margin: 0 auto;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.profanitiesListDiv--table{
+  margin:0 auto;
+  text-align: left;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profanitiesListDiv--table > tr{
+  height: 50px;
+}
+.profanitiesListDiv--table > tr > td{
+  display: inline-block;
+}
+
+.profanitiesListDiv--table >tr >th {
+  padding: 3px;
+  border: 2px solid black;
+  border-spacing:0px;
+  border-collapse: collapse;
+}
+
+.updateDeleteDiv{
+  display: flex;
+  gap: 5px;
+  height: 100% !important;
+  
+}
+
+.updateDeleteDiv > button{
+  width: 100%;
+  height: 100%;
+  color: black;
+  cursor: pointer;
+}
+
+.updateDeleteDiv--updateBtn{
+  background-color: rgb(255, 255, 107);
+}
+.updateDeleteDiv--deleteBtn{
+  background-color: rgb(246, 80, 80);
+
 }
